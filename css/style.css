@@ -1,0 +1,137 @@
+.parent {
+    background-color: rgb(84, 84, 84);
+}
+
+.box {
+    margin: 50px 1px 0px;
+    width: 600px;
+    height: 340px;
+    border-radius: 1px;
+    background-color: #ffffff;
+    /* Фоновый цвет*/
+    border: 2px solid #D4D4D4;
+    /* Ширина и цвет границ*/
+    border-radius: 10px;
+    /* Радиус границ*/
+    box-shadow: 0 0 15px #A9A9A9;
+    /* Размер и цвет тени блока*/
+}
+
+.block {
+    display: inline-block;
+    padding: 5px 10px 5px;
+    margin: 5px 10px 5px;
+}
+
+
+.img {
+    transition: 0.3s;
+    border-radius: 15px;
+}
+
+.button {
+    padding: 5px 25px 5px;
+    background-color: #afafaf;
+    margin: 5px 25px 5px;
+    /* Фоновый цвет*/
+    border: 1px solid #D4D4D4;
+    border-radius: 5px;
+    /* Радиус границ*/
+    box-shadow: 0 0 15px #A9A9A9;
+    /* Размер и цвет тени блока*/
+}
+
+
+.player_name {
+    margin: 1em 0 0.5em 0;
+    color: #343434;
+    font-weight: normal;
+    font-size: 30px;
+    line-height: 40px;
+    font-family: 'Orienta', sans-serif;
+}
+
+.total_points {
+    font-size: 90px;
+    font-family: 'Orienta', sans-serif;
+}
+
+.point_title {
+    margin: 1em 0 0.5em 0;
+    color: #343434;
+    font-size: 16px;
+    line-height: 40px;
+    font-weight: normal;
+    text-transform: uppercase;
+    font-family: 'Orienta', sans-serif;
+    letter-spacing: 1px;
+    font-style: italic;
+}
+
+.current_points {
+    margin: 1em 0 0.5em 0;
+    color: #343434;
+    font-size: 18px;
+    line-height: 20px;
+    font-weight: normal;
+    font-family: 'Orienta', sans-serif;
+}
+
+.current_player {
+    transition: 0.3s;
+    /* Фоновый цвет*/
+    border: 1px solid #D4D4D4;
+    border-radius: 5px;
+    /* Радиус границ*/
+    box-shadow: 0 0 15px #A9A9A9;
+    /* Размер и цвет тени блока*/
+}
+
+.text {
+    Position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
+
+.winner {
+    opacity: 0;
+    animation: show 0.3s forwards;
+    margin: 0 10px 0;
+    position: absolute;
+    top: 55px;
+    width: 580px;
+    height: 280px;
+    background-color: #ffffff;
+    color: #343434;
+    font-weight: normal;
+    font-size: 30px;
+    vertical-align: middle;
+    font-family: 'Orienta', sans-serif;
+}
+
+@keyframes show {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.hide {
+    opacity: 1;
+    animation: hide 0.3s forwards;
+}
+
+@keyframes hide {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
