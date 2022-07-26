@@ -10,6 +10,7 @@ window.addEventListener('DOMContentLoaded', () => {
         secondBlock = document.querySelector('.player_2'),
         box = document.querySelector('.box');
 
+        
     //Create buff object
     let res = {
         curr: 0,
